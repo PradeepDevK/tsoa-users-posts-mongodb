@@ -1,0 +1,26 @@
+=== Step 1 ===
+npm install express tsoa mongoose body-parser dotenv
+
+=== Step 2 ===
+npm install --save-dev typescript @types/express @types/node nodemon ts-node
+
+=== Step 3 ===
+npx tsc --init
+
+=== Step 4 ===
+npx tsoa init
+
+=== Step 5 After Models and Controller defined ===
+npx tsoa routes
+npx tsoa spec
+
+=== Step 6 Open API Doc ==
+npm install swagger-ui-express
+npm install @types/swagger-ui-express
+
+=== Step 7 Server Start ===
+npm run build
+node dist/index.js
+
+=== Implementing Class Validator, JWT Auth and Error Handler
+npm install class-validator class-transformer
